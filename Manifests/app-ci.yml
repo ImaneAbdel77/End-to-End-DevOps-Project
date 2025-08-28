@@ -7,7 +7,7 @@
      chdir: /opt/docker
 
   - name: create tag to push image onto dockerhub
-    command: docker tag myapp:latest chydinma/myapp:latest
+    command: docker tag myapp:latest minush/myapp:latest
 
   - name: push docker image
-    command: docker push chydinma/myapp:latest
+    command: docker push minush/myapp:latest

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: merciboi-service
+  name: depapp-service
   labels:
     app: myapp 
 spec:

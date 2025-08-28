@@ -1,12 +1,13 @@
-# Create Security Group - SSH Traffic and other ports
 resource "aws_security_group" "web-traffic" {
-  name = "My_Security_Group2"
+  name        = "ansible-sg"
+  description = "Allow SSH and Ansible traffic"
 
   ingress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    description = "SSH"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["34.229.214.25/32"] # ⚠️ Remplace par ton IP publique
   }
 
   egress {
@@ -16,8 +17,7 @@ resource "aws_security_group" "web-traffic" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-
   tags = {
-    "Name" = "My_SG2"
+    "Name" = "ansible-sg"
   }
 }

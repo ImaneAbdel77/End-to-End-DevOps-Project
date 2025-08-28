@@ -1,6 +1,6 @@
 # Create Security Group - SSH Traffic and other ports
 resource "aws_security_group" "web-traffic" {
-  name = "My_Security_Group3"
+  name = "EKS-sg"
 
   ingress {
     from_port   = 0
@@ -18,6 +18,6 @@ resource "aws_security_group" "web-traffic" {
 
 
   tags = {
-    "Name" = "My_SG333"
+    "Name" = "EKS-sg"
   }
 }

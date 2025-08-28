@@ -3,19 +3,19 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0" # Optional but recommended in production
+      version = "~> 5.0" # Optional but recommended in production
     }
   }
 
   backend "s3" {
-    bucket = "project-register"
+    bucket = "imane-abdel7"
     key    = "ansible/terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
 
   }
 }
 
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
