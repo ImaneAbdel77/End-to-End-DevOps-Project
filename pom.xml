@@ -9,13 +9,6 @@
 	
 	<name>maven-web-application</name>
 
-	<description>Maven Web Project for Java Project</description>
-
-	<organization>
-		<name>Merciboi Systems Solutions</name>
-		<url>https://www.merciboi.com/</url>
-	</organization>
-
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
